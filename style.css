@@ -1156,3 +1156,58 @@ body {
         justify-content: center;
     }
 }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1; 
+}
+
+.brand-name {
+    font-family: 'Amiri', serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+}
+.sub-brand {
+    font-family: 'Cairo', sans-serif;
+    font-size: 0.8rem; 
+    color: var(--accent-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -2px;
+    position: relative;
+    padding-right: 2px;
+}
+.logo:hover .sub-brand {
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+.icon-logo {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+@media (max-width: 768px) {
+    .brand-name { font-size: 1.5rem; }
+    .sub-brand { font-size: 0.7rem; }
+    .icon-logo { font-size: 2rem; }
+}
+@media (max-width: 768px) {
+    .hero-content p {
+        font-size: 0.95rem !important;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        padding: 0 10px; 
+    }
+    .hero-content h1 {
+        font-size: 1.9rem !important;
+        margin-bottom: 15px;
+    }
+}
